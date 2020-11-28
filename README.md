@@ -1,10 +1,20 @@
 # secret-boot-framework
 
 #### 介绍
-secret-boot脚手架
+secret-boot脚手架(长期框架版本长期更新)
+
+只实现开发中最基础的springboot、mybatis、redis整合
+内置丰富的基础工具类，开箱即用
+
+#### 核心依赖
+|  表头   | 表头  |
+|  ----  | ----  |
+| springboot  | 2.0.8.RELEASE |
+| mybatis-plus  | 3.0.5 |
+| mysql  | 5.7/8.x |
+| redis  | 3.2 |
 
 #### 软件架构
-软件架构说明
 
 
 #### 安装教程
