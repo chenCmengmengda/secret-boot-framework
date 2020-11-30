@@ -1,5 +1,12 @@
 # secret-boot-framework
 
+![JDK](https://img.shields.io/badge/JDK-1.8-green.svg)
+![Maven](https://img.shields.io/badge/Maven-3.6.1-green.svg)
+![MySQL](https://img.shields.io/badge/MySQL-5.7-green.svg)
+![Redis](https://img.shields.io/badge/Redis-3.2.100-green.svg)
+[![license](https://img.shields.io/badge/license-GPL%20v3-yellow.svg)](https://gitee.com/secret_C/secretBlogBoot/blob/master/LICENSE)
+
+
 #### 介绍
 secret-boot脚手架(长期框架版本长期更新)
 
@@ -16,6 +23,7 @@ secret-boot脚手架(长期框架版本长期更新)
 | redis  |  |
 
 #### 截图
+![avatar](http://secret_c.gitee.io/secret-boot-framework/img1.png)
 
 
 #### 使用说明
