@@ -5,9 +5,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import java.util.Collection;
-import java.util.List;
-
 /**
  * controller返回json
  *
@@ -20,7 +17,6 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class ResponseVO<T> {
-    ObjectMapper mapper = new ObjectMapper();
     private Integer status;
     private String message;
     private T data;
@@ -36,6 +32,7 @@ public class ResponseVO<T> {
     }
 
     public String toJson() {
+        ObjectMapper mapper = new ObjectMapper();
         T t = this.getData();
         String json=null;
         try {

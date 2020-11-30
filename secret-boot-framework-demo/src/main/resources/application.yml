@@ -1,0 +1,65 @@
+# Server settings
+server:
+  # HTTP请求和响应头的最大量，以字节为单位，默认值为4096字节,超过此长度的部分不予处理,一般8K。解决java.io.EOFException: null问题
+  max-http-header-size: 8192
+  use-forward-headers: true
+  compression:
+    enabled: true
+    min-response-size: 1024
+    mime-types: text/plain,text/css,text/xml,text/javascript,application/json,application/javascript,application/xml,application/xml+rss,application/x-javascript,application/x-httpd-php,image/jpeg,image/gif,image/png
+  tomcat:
+    remote-ip-header: X-Forwarded-for
+    protocol-header: X-Forwarded-Proto
+    port-header: X-Forwarded-Port
+    uri-encoding: UTF-8
+spring:
+  application:
+    name: secret-boot-framework-demo
+  profiles:
+    active: '@profileActive@'
+#  thymeleaf:
+#    prefix: classpath:/templates/
+#    check-template-location: true
+#    suffix: .html
+#    encoding: UTF-8
+#    mode: HTML5
+#    cache: fasle
+#    servlet:
+#      content-type: text/html
+
+# MyBatis-plus
+mybatis-plus:
+  # MyBaits 别名包扫描路径，通过该属性可以给包中的类注册别名
+  type-aliases-package: cn.chenc.framework.demo.entity
+  # 该配置请和 typeAliasesPackage 一起使用，如果配置了该属性，则仅仅会扫描路径下以该类作为父类的域对象 。
+  type-aliases-super-type: java.lang.Object
+  mapper-locations: classpath:/mapper/*.xml
+  configuration:
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 驼峰下划线转换
+    map-underscore-to-camel-case: true
+    # 配置的缓存的全局开关
+    cache-enabled: true
+    # 延时加载的开关
+    lazy-loading-enabled: true
+    # 开启的话，延时加载一个属性时会加载该对象全部属性，否则按需加载属性
+    multiple-result-sets-enabled: true
+    use-generated-keys: true
+    default-statement-timeout: 60
+    default-fetch-size: 100
+  global-config:
+    db-config:
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+
+# mapper
+mapper:
+  mappers: cn.chenc.framework.demo.mapper
+  not-empty: false
+  identity: MYSQL
+
+#日志
+logging:
+  path: ./logs
+

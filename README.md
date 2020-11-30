@@ -4,30 +4,25 @@
 secret-boot脚手架(长期框架版本长期更新)
 
 只实现开发中最基础的springboot、mybatis、redis整合
+
 内置丰富的基础工具类，开箱即用
 
 #### 核心依赖
-|  表头   | 表头  |
+|  组件   | 版本  |
 |  ----  | ----  |
 | springboot  | 2.0.8.RELEASE |
 | mybatis-plus  | 3.0.5 |
 | mysql  | 5.7/8.x |
-| redis  | 3.2 |
+| redis  |  |
 
-#### 软件架构
+#### 截图
 
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  导入maven包
+2.  运行DemoApplication
+3.  访问localhost:8080
 
 #### 参与贡献
 
