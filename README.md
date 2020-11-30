@@ -23,7 +23,7 @@ secret-boot脚手架(长期框架版本长期更新)
 | redis  |  |
 
 #### 截图
-![avatar](http://secret_c.gitee.io/secret-boot-framework/img1.png)
+![avatar](http://secretOpen.gitee.io/secret-boot-framework/img1.png)
 
 
 #### 使用说明
