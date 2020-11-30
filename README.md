@@ -8,7 +8,7 @@
 
 
 #### 介绍
-secret-boot脚手架(长期框架版本长期更新)
+secret-boot脚手架(根据核心依赖版本长期更新)
 
 只实现开发中最基础的springboot、mybatis、redis整合
 
@@ -17,8 +17,8 @@ secret-boot脚手架(长期框架版本长期更新)
 #### 核心依赖
 |  组件   | 版本  |
 |  ----  | ----  |
-| springboot  | 2.0.8.RELEASE |
-| mybatis-plus  | 3.0.5 |
+| springboot  | 2.1.12.RELEASE |
+| mybatis-plus  | 3.0.7 |
 | mysql  | 5.7/8.x |
 | redis  |  |
 
