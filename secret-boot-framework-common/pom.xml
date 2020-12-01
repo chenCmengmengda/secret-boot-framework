@@ -4,16 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>secret-boot-framework</artifactId>
-        <groupId>cn.chenc.framework.boot</groupId>
+        <groupId>com.gitee.secretopen</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <name>${project.artifactId}</name>
     <artifactId>secret-boot-framework-common</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>secret-boot-framework-common-core</module>
         <module>secret-boot-framework-common-cache</module>
+        <module>secret-boot-framework-common-mybatisplus</module>
+        <module>secret-boot-framework-common-plugin</module>
     </modules>
 
 </project>

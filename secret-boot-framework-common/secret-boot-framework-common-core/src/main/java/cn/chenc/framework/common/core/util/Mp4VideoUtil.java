@@ -1,7 +1,6 @@
 package cn.chenc.framework.common.core.util;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -83,13 +82,4 @@ public class Mp4VideoUtil extends VideoUtil {
         }
     }
 
-    public static void main(String[] args) throws IOException {
-        String ffmpeg_path = "D:\\Program Files\\ffmpeg-20180227-fa0c9d6-win64-static\\bin\\ffmpeg.exe";//ffmpeg的安装位置
-        String video_path = "E:\\ffmpeg_test\\1.avi";
-        String mp4_name = "809694a6a974c35e3a36f36850837d7c.mp4";
-        String mp4_path = "F:/develop/upload/8/0/809694a6a974c35e3a36f36850837d7c/";
-        Mp4VideoUtil videoUtil = new Mp4VideoUtil(ffmpeg_path,video_path,mp4_name,mp4_path);
-        String s = videoUtil.generateMp4();
-        System.out.println(s);
-    }
 }

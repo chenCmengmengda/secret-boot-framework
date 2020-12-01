@@ -3,22 +3,22 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>secret-boot-framework</artifactId>
-        <groupId>cn.chenc.framework.boot</groupId>
+        <artifactId>secret-boot-framework-common</artifactId>
+        <groupId>com.gitee.secretopen</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../../pom.xml</relativePath>
     </parent>
+    <name>${project.artifactId}</name>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>secret-boot-framework-common-plugin</artifactId>
     <dependencies>
         <dependency>
-            <groupId>cn.chenc.framework.boot</groupId>
+            <groupId>com.gitee.secretopen</groupId>
             <artifactId>secret-boot-framework-common-core</artifactId>
             <version>${secret.framework.version}</version>
         </dependency>
         <dependency>
-            <groupId>cn.chenc.framework.boot</groupId>
+            <groupId>com.gitee.secretopen</groupId>
             <artifactId>secret-boot-framework-common-cache</artifactId>
             <version>${secret.framework.version}</version>
         </dependency>

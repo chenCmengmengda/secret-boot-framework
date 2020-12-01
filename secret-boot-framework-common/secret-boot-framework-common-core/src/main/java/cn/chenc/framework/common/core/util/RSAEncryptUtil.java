@@ -19,19 +19,7 @@ import java.util.Map;
  */
 public class RSAEncryptUtil {
     private static Map<Integer, String> keyMap = new HashMap<Integer, String>();  //用于封装随机产生的公钥与私钥
-    public static void main(String[] args) throws Exception {
-        //生成公钥和私钥
-        genKeyPair();
-        //加密字符串
-        String message = "df723820";
-        System.out.println("随机生成的公钥为:" + keyMap.get(0));
-        System.out.println("随机生成的私钥为:" + keyMap.get(1));
-        String messageEn = encrypt(message,keyMap.get(0));
-        System.out.println(message + "\t加密后的字符串为:" + messageEn);
-
-        String messageDe = decrypt(messageEn,keyMap.get(1));
-        System.out.println("还原后的字符串为:" + messageDe);
-    }
+//
     /**
      * 随机生成密钥对
      * @throws NoSuchAlgorithmException

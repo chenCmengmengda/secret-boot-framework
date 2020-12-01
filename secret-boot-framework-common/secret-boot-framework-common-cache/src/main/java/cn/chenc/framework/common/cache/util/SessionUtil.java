@@ -1,8 +1,6 @@
 package cn.chenc.framework.common.cache.util;
 
 
-
-
 import cn.chenc.framework.common.cache.consts.SessionConst;
 import cn.chenc.framework.common.core.model.request.RequestHolder;
 
