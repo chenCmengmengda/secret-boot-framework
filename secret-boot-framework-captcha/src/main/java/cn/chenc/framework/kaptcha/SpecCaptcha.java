@@ -1,4 +1,4 @@
-package cn.chenc.framework.common.plugin.kaptcha;
+package cn.chenc.framework.kaptcha;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
