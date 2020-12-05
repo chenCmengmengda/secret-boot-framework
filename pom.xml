@@ -4,7 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <module>secret-boot-framework-common</module>
+        <module>secret-boot-framework-all</module>
+        <module>secret-boot-framework-core</module>
+        <module>secret-boot-framework-cache</module>
+        <module>secret-boot-framework-mybatisplus</module>
+        <module>secret-boot-framework-captcha</module>
     </modules>
 
     <parent>
@@ -18,11 +22,11 @@
 
     <groupId>com.gitee.secretopen</groupId>
     <artifactId>secret-boot-framework</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1</version>
 
 
     <properties>
-        <secret.framework.version>1.0-SNAPSHOT</secret.framework.version>
+        <secret.framework.version>1.1</secret.framework.version>
         <java.version>1.8</java.version>
         <tomcat.version>8.5.28</tomcat.version>
         <spring-boot.version>2.0.1.RELEASE</spring-boot.version>
@@ -227,6 +231,23 @@
                             </execution>
                         </executions>
                     </plugin>
+                    <!-- Javadoc -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>2.9.1</version>
+                        <configuration>
+                            <additionalparam>-Xdoclint:none</additionalparam>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <phase>package</phase>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
                     <!-- GPG  打包插件-->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -234,6 +255,7 @@
                         <version>1.6</version>
                         <executions>
                             <execution>
+                                <!-- 必须和配置中的gpg校验id一致 -->
                                 <phase>verify</phase>
                                 <goals>
                                     <goal>sign</goal>

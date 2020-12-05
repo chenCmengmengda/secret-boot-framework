@@ -1,7 +1,7 @@
 package cn.chenc.framework.demo.controller;
 
-import cn.chenc.framework.common.core.model.response.ResponseVO;
-import cn.chenc.framework.common.core.model.response.ResultUtil;
+import cn.chenc.framework.core.model.response.ResponseVO;
+import cn.chenc.framework.core.model.response.ResultUtil;
 import cn.chenc.framework.demo.entity.User;
 import cn.chenc.framework.demo.service.UserService;
 import com.baomidou.mybatisplus.core.metadata.IPage;

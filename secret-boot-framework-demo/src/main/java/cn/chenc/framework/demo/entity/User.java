@@ -1,6 +1,6 @@
 package cn.chenc.framework.demo.entity;
 
-import cn.chenc.framework.common.mybatisplus.model.BaseConditionVO;
+import cn.chenc.framework.mybatisplus.model.BaseConditionVO;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;

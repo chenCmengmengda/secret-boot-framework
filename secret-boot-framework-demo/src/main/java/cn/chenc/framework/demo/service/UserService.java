@@ -1,6 +1,6 @@
 package cn.chenc.framework.demo.service;
 
-import cn.chenc.framework.common.core.model.response.ResponseVO;
+import cn.chenc.framework.core.model.response.ResponseVO;
 import cn.chenc.framework.demo.entity.User;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;

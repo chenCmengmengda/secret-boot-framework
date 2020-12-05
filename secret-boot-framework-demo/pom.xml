@@ -5,26 +5,30 @@
     <parent>
         <artifactId>secret-boot-framework</artifactId>
         <groupId>com.gitee.secretopen</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>secret-boot-framework-demo</artifactId>
+
+    <properties>
+        <secret.framework.version>1.1</secret.framework.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>com.gitee.secretopen</groupId>
-            <artifactId>secret-boot-framework-common-core</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>secret-boot-framework-core</artifactId>
+            <version>${secret.framework.version}</version>
         </dependency>
         <dependency>
             <groupId>com.gitee.secretopen</groupId>
-            <artifactId>secret-boot-framework-common-cache</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>secret-boot-framework-cache</artifactId>
+            <version>${secret.framework.version}</version>
         </dependency>
         <dependency>
             <groupId>com.gitee.secretopen</groupId>
-            <artifactId>secret-boot-framework-common-mybatisplus</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <artifactId>secret-boot-framework-mybatisplus</artifactId>
+            <version>${secret.framework.version}</version>
         </dependency>
     </dependencies>
 
