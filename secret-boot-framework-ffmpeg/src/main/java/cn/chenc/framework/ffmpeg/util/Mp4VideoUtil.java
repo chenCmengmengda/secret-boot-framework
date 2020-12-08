@@ -1,4 +1,4 @@
-package cn.chenc.framework.core.util;
+package cn.chenc.framework.ffmpeg.util;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -9,10 +9,10 @@ import java.util.List;
  */
 public class Mp4VideoUtil extends VideoUtil {
 
-    String ffmpeg_path = "E:\\program Files\\ffmpeg\\ffmpeg-20180227-fa0c9d6-win64-static\\bin\\ffmpeg.exe";//ffmpeg的安装位置
-    String video_path = "D:\\BaiduNetdiskDownload\\test1.avi";
-    String mp4_name = "test1.mp4";
-    String mp4folder_path = "D:/BaiduNetdiskDownload/Movies/test1/";
+    String ffmpeg_path = "ffmpeg";//ffmpeg的安装位置,默认执行ffmpet命令,需要配置环境变量
+    String video_path = "D:\\BaiduNetdiskDownload\\test1.avi";//待处理视频文件路径
+    String mp4_name = "test1.mp4";//视频文件名字,带后缀
+    String mp4folder_path = "D:/BaiduNetdiskDownload/Movies/test1/";//视频生成路径
     public Mp4VideoUtil(String ffmpeg_path, String video_path, String mp4_name, String mp4folder_path){
         super(ffmpeg_path);
         if(ffmpeg_path!=null){

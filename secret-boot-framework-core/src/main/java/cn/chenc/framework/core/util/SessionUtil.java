@@ -1,7 +1,7 @@
-package cn.chenc.framework.cache.util;
+package cn.chenc.framework.core.util;
 
 
-import cn.chenc.framework.cache.consts.SessionConst;
+import cn.chenc.framework.core.consts.SessionConst;
 import cn.chenc.framework.core.model.request.RequestHolder;
 
 import java.util.UUID;

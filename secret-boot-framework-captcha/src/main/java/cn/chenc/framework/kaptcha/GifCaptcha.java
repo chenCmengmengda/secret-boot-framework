@@ -1,7 +1,7 @@
 package cn.chenc.framework.kaptcha;
 
 
-import cn.chenc.framework.cache.util.SessionUtil;
+import cn.chenc.framework.core.util.SessionUtil;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;

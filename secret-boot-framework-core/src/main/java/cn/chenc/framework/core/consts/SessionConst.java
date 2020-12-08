@@ -1,4 +1,4 @@
-package cn.chenc.framework.cache.consts;
+package cn.chenc.framework.core.consts;
 
 /**
  * @author yadong.zhang (yadong.zhang0415(a)gmail.com)

@@ -1,4 +1,4 @@
-package cn.chenc.framework.demo.aspect;
+package cn.chenc.framework.cache.aspect;
 
 import cn.chenc.framework.cache.annotation.RedisCache;
 import cn.chenc.framework.cache.util.RedisUtils;

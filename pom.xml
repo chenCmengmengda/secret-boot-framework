@@ -9,6 +9,7 @@
         <module>secret-boot-framework-cache</module>
         <module>secret-boot-framework-mybatisplus</module>
         <module>secret-boot-framework-captcha</module>
+        <module>secret-boot-framework-ffmpeg</module>
     </modules>
 
     <parent>
@@ -22,11 +23,11 @@
 
     <groupId>com.gitee.secretopen</groupId>
     <artifactId>secret-boot-framework</artifactId>
-    <version>1.1</version>
+    <version>1.2.0</version>
 
 
     <properties>
-        <secret.framework.version>1.1</secret.framework.version>
+        <secret.framework.version>1.2.0</secret.framework.version>
         <java.version>1.8</java.version>
         <tomcat.version>8.5.28</tomcat.version>
         <spring-boot.version>2.0.1.RELEASE</spring-boot.version>

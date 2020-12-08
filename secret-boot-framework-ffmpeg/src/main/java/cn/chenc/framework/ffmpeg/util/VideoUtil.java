@@ -1,4 +1,4 @@
-package cn.chenc.framework.core.util;
+package cn.chenc.framework.ffmpeg.util;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,7 +13,7 @@ import java.util.List;
  */
 public class VideoUtil {
 
-    String ffmpeg_path = "E:\\program Files\\ffmpeg\\ffmpeg-20180227-fa0c9d6-win64-static\\bin\\ffmpeg.exe";//ffmpeg的安装位置
+    String ffmpeg_path = "ffmpeg";//ffmpeg的安装位置
 
     public VideoUtil(String ffmpeg_path){
         if(ffmpeg_path!=null) {
