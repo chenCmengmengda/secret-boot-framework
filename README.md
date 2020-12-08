@@ -16,6 +16,7 @@ secret-boot脚手架(根据核心依赖版本长期更新)
 
 #### 功能
 jackson支持LocalDateTime、LocalDate、LocalTime
+
 cache模块支持缓存切面
 
 ##### 模块介绍
