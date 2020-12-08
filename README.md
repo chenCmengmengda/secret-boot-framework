@@ -71,7 +71,7 @@ cache模块支持缓存切面
 | Mp4VideoUtil   | mp4工具类 |
 | HlsVideoUtil   | hls工具类 |
 
-如果嫌弃以上工具仍然不够用，本框架内置了hutool来解决大家的需求。
+如果觉得以上工具仍然不够用，本框架内置了hutool来解决大家的需求。
 
 #### 使用方法
 已发布到maven中央仓库
