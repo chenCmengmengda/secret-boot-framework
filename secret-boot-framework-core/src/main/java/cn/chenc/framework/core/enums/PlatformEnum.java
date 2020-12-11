@@ -8,7 +8,7 @@ package cn.chenc.framework.core.enums;
  */
 public enum PlatformEnum {
     ADMIN("后台管理"),
-    WEB("博客门户"),
+    WEB("前台网站"),
     ;
 
     private String platform;

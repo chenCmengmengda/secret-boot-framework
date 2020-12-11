@@ -26,6 +26,8 @@ cache模块支持缓存切面
 | secret-boot-framework-cache  | 框架缓存模块 |
 | secret-boot-framework-mybatis-plus  | 与mybatis-plus集成 |
 | secret-boot-framework-captcha  | 图形验证码 |
+| secret-boot-framework-ffmpeg  | ffmpet工具模块 |
+| secret-boot-framework-excel  | excel工具工具模块 |
 
 ##### core模块内置工具类介绍
 |  类名   | 介绍  |
@@ -51,6 +53,7 @@ cache模块支持缓存切面
 | TextUtil | 文本转化工具 |
 | WebSpiderUtils | 爬虫工具 |
 | ZipFileUtils | zip压缩工具 |
+| OkHttpClientUtils | OkHttp3封装工具 |
 
 ##### cache模块内置工具类介绍
 |  类名   | 介绍  |
@@ -58,7 +61,7 @@ cache模块支持缓存切面
 | RedisUtils  | Redis工具 |
 | SessionUtils  | Session工具 |
 
-##### cache模块内置工具类介绍
+##### captcha模块内置工具类介绍
 |  类名   | 介绍  |
 |  ----  | ----  |
 | GifCaptcha  | 生成gif图片验证码 |

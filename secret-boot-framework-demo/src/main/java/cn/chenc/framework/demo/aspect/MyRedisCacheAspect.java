@@ -19,7 +19,7 @@ import java.lang.reflect.Method;
 @Slf4j
 @Aspect
 @Component
-public class RedisCacheAspect {
+public class MyRedisCacheAspect {
 
     private static final String BIZ_CACHE_PREFIX = "biz_cache_";
 

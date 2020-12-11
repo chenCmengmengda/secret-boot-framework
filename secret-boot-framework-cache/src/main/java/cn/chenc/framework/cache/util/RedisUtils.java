@@ -80,10 +80,18 @@ public class RedisUtils {
         }
     }
 
+    /**
+     * 批量删除缓存
+     * @param keys
+     */
     public void delBatch(Set<String> keys) {
         redisTemplate.delete(keys);
     }
 
+    /**
+     * 批量删除缓存
+     * @param keyPrefix
+     */
     public void delBatch(String keyPrefix) {
         Set<String> keys = this.keys(keyPrefix + "*");
         if (!CollectionUtils.isEmpty(keys)) {

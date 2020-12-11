@@ -17,15 +17,6 @@ spring:
     name: secret-boot-framework-demo
   profiles:
     active: '@profileActive@'
-#  thymeleaf:
-#    prefix: classpath:/templates/
-#    check-template-location: true
-#    suffix: .html
-#    encoding: UTF-8
-#    mode: HTML5
-#    cache: fasle
-#    servlet:
-#      content-type: text/html
 
 # MyBatis-plus
 mybatis-plus:
@@ -53,13 +44,8 @@ mybatis-plus:
       logic-delete-value: 1 # 逻辑已删除值(默认为 1)
       logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
 
-# mapper
-mapper:
-  mappers: cn.chenc.framework.demo.mapper
-  not-empty: false
-  identity: MYSQL
 
 #日志
-logging:
-  path: ./logs
+#logging:
+#  path: ./logs
 

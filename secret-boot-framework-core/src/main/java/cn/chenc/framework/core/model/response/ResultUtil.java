@@ -70,11 +70,5 @@ public class ResultUtil {
         return new PageResult(ResponseStatus.SUCCESS.getCode(),ResponseStatus.SUCCESS.getMessage(),total, list);
     }
 
-//    public static PageResult tablePage(PageInfo info) {
-//        if (info == null) {
-//            return new PageResult(ResponseStatus.SUCCESS.getCode(),ResponseStatus.SUCCESS.getMessage(),0L, new ArrayList());
-//        }
-//        return tablePage(info.getTotal(), info.getList());
-//    }
 
 }

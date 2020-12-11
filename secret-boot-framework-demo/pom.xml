@@ -12,7 +12,7 @@
     <artifactId>secret-boot-framework-demo</artifactId>
 
     <properties>
-        <secret.framework.version>1.1</secret.framework.version>
+        <secret.framework.version>1.2.0</secret.framework.version>
     </properties>
     <dependencies>
         <dependency>

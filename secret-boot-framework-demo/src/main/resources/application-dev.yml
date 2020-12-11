@@ -38,14 +38,14 @@ spring:
         min-idle: 0
     # 连接超时时间（毫秒）
     timeout: 5000ms
-    # 默认的数据过期时间，主要用于shiro权限管理
+    # 默认的数据过期时间
     expire: 2592000
 
 #日志
-logging:
-  level:
-    root: debug
-    org.springframework.scheduling: INFO
+#logging:
+#  level:
+#    root: debug
+#    org.springframework.scheduling: INFO
 
 ####################################自定义配置##########################################
 
