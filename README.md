@@ -85,6 +85,7 @@ cache模块支持缓存切面
     <version>1.1</version>
 </dependency>
 ```
+**详情请看 [wiki文档](https://gitee.com/SecretOpen/secret-boot-framework/wikis/%E7%AE%80%E4%BB%8B?sort_id=3220070)**
 
 #### 核心依赖
 |  组件   | 版本  |
@@ -99,7 +100,7 @@ cache模块支持缓存切面
 ![avatar](http://secretOpen.gitee.io/secret-boot-framework/img1.png)
 
 
-#### 使用说明
+#### demo使用说明
 
 1.  导入maven包
 2.  运行DemoApplication
