@@ -32,6 +32,16 @@
             <artifactId>secret-boot-framework-captcha</artifactId>
             <version>${secret.framework.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.gitee.secretopen</groupId>
+            <artifactId>secret-boot-framework-ffmpeg</artifactId>
+            <version>${secret.framework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.gitee.secretopen</groupId>
+            <artifactId>secret-boot-framework-excel</artifactId>
+            <version>${secret.framework.version}</version>
+        </dependency>
     </dependencies>
 
 

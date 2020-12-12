@@ -16,9 +16,10 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <!--druid依赖添加-->
         <dependency>
             <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
+            <artifactId>druid-spring-boot-starter</artifactId>
         </dependency>
         <!--springboot 集成Mybatis所需jar配置 start -->
         <!--支持使用 JDBC 访问数据库 -->
