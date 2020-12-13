@@ -29,52 +29,10 @@ cache模块支持缓存切面
 | secret-boot-framework-ffmpeg  | ffmpet工具模块 |
 | secret-boot-framework-excel  | excel工具工具模块 |
 
-##### core模块内置工具类介绍
-|  类名   | 介绍  |
-|  ----  | ----  |
-| AesUtil  | AES加密工具 |
-| AspectUtil  | aop切面工具 |
-| CacheKeyUtil  | 缓存key生成工具 |
-| CookieUtils  | Cookie工具 |
-| DateUtils  | 日期工具 |
-| ExceptionUtil  | 异常工具 |
-| FtpUtil  | Ftp工具 |
-| HtmlUtil  | Html工具 |
-| HttpClientUtil  | Http工具 |
-| IDUtils  | id生成策略工具 |
-| IpUtil  | ip工具 |
-| JsonUtils  | json转换工具 |
-| Md5Util  | md5工具 |
-| PasswordUtil  | 密码加密工具 |
-| RegexUtils  | 正则表达式工具 |
-| RequestUtil  | http请求工具 |
-| RestClientUtil  | Http接口请求工具 |
-| RSAEncryptUtil | RSA加密工具 |
-| TextUtil | 文本转化工具 |
-| WebSpiderUtils | 爬虫工具 |
-| ZipFileUtils | zip压缩工具 |
-| OkHttpClientUtils | OkHttp3封装工具 |
-
-##### cache模块内置工具类介绍
-|  类名   | 介绍  |
-|  ----  | ----  |
-| RedisUtils  | Redis工具 |
-| SessionUtils  | Session工具 |
-
-##### captcha模块内置工具类介绍
-|  类名   | 介绍  |
-|  ----  | ----  |
-| GifCaptcha  | 生成gif图片验证码 |
-| SpecCaptcha   | 生成png图片验证码 |
-
-##### ffmpeg模块内置工具类介绍
-|  类名   | 介绍  |
-|  ----  | ----  |
-| VideoUtil  | 视频工具类 |
-| Mp4VideoUtil   | mp4工具类 |
-| HlsVideoUtil   | hls工具类 |
-
 如果觉得以上工具仍然不够用，本框架内置了hutool来解决大家的需求。
+
+**<font size=5>本框架具体详情请看 [wiki说明文档](https://gitee.com/SecretOpen/secret-boot-framework/wikis/%E7%AE%80%E4%BB%8B?sort_id=3220070) </font>**
+
 
 #### 使用方法
 已发布到maven中央仓库
@@ -85,16 +43,15 @@ cache模块支持缓存切面
     <version>1.1</version>
 </dependency>
 ```
-**详情请看 [wiki文档](https://gitee.com/SecretOpen/secret-boot-framework/wikis/%E7%AE%80%E4%BB%8B?sort_id=3220070)**
 
 #### 核心依赖
 |  组件   | 版本  |
 |  ----  | ----  |
-| springboot  | 2.1.12.RELEASE |
-| mybatis-plus  | 3.0.7 |
+| springboot  | 2.2.2.RELEASE |
+| mybatis-plus  | 3.4.1 |
 | mysql  | 5.7/8.x |
 | redis  |  |
-| hutool  | 4.1.21 |
+| hutool  | 5.5.2 |
 
 #### 截图
 ![avatar](http://secretOpen.gitee.io/secret-boot-framework/img1.png)
