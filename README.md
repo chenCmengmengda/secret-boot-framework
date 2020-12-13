@@ -31,7 +31,7 @@ cache模块支持缓存切面
 
 如果觉得以上工具仍然不够用，本框架内置了hutool来解决大家的需求。
 
-**<font size=5>本框架具体详情请看 [wiki说明文档](https://gitee.com/SecretOpen/secret-boot-framework/wikis/%E7%AE%80%E4%BB%8B?sort_id=3220070) </font>**
+**<font size=6>本框架具体详情请看 [wiki说明文档](https://gitee.com/SecretOpen/secret-boot-framework/wikis/%E7%AE%80%E4%BB%8B?sort_id=3220070) </font>**
 
 
 #### 使用方法
@@ -40,7 +40,7 @@ cache模块支持缓存切面
 <dependency>
     <groupId>com.gitee.secretopen</groupId>
     <artifactId>secret-boot-framework-all</artifactId>
-    <version>1.1</version>
+    <version>1.2.0</version>
 </dependency>
 ```
 
