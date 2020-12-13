@@ -16,13 +16,6 @@ import java.util.regex.Pattern;
  */
 public class RegexUtils {
 
-    /**
-     * @param regex
-     *         正则表达式字符串
-     * @param str
-     *         要匹配的字符串
-     * @return 如果str 符合 regex的正则表达式格式,返回true, 否则返回 false;
-     */
     public static List<String> match(String str, String regex) {
         if (null == str) {
             return null;
@@ -36,6 +29,13 @@ public class RegexUtils {
         return list;
     }
 
+    /**
+     * @param regex
+     *         正则表达式字符串
+     * @param str
+     *         要匹配的字符串
+     * @return 如果str 符合 regex的正则表达式格式,返回true, 否则返回 false;
+     */
     public static boolean checkByRegex(String str, String regex) {
         if (null == str) {
             return false;

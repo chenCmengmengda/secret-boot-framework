@@ -14,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface UserService extends IService<User> {
     IPage queryUserPageList(User user);
     ResponseVO addUser(User user);
+    ResponseVO cheanCache();
 }

@@ -36,4 +36,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         this.save(user);
         return ResultUtil.success("添加成功");
     }
+
+    @Override
+    @RedisCache(flush = true)
+    public ResponseVO cheanCache(){
+        return ResultUtil.success("清除缓存成功");
+    }
 }

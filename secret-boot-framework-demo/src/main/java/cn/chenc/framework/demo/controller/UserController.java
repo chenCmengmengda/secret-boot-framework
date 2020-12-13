@@ -52,5 +52,9 @@ public class UserController {
         return userService.addUser(user);
     }
 
+    @GetMapping("/cleanCache")
+    public ResponseVO cleanCache(){
+        return userService.cheanCache();
+    }
 
 }

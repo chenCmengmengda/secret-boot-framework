@@ -67,6 +67,7 @@ public class JsonUtils {
         // 忽略反序列化时在json字符串中存在, 但在java对象中不存在的属性
         MAPPER.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
     }
+
     /**
      * 将对象转换成json字符串。
      * <p>Title: pojoToJson</p>

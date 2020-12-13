@@ -18,10 +18,26 @@ public class DateUtils {
     public DateUtils() {
     }
 
+    /**
+     * @description: 获取当前日期字符串
+     * @param var1 日期格式(例如："yyyy-MM-dd HH:mm:ss")
+     * @return java.lang.String
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static String getCurrentDate(String var1) {
         return (new SimpleDateFormat(var1)).format(new Date());
     }
 
+    /**
+     * @description: 将日期字符串转化为Date对象
+     * @param date 日期字符串
+     * @return java.util.Date
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Date parse(String date) {
         if (StringUtils.isEmpty(date)) {
             return null;
@@ -34,6 +50,15 @@ public class DateUtils {
         }
     }
 
+    /**
+     * @description: 将日期字符串按自定义格式化转化为Date对象
+     * @param date 日期字符串
+     * @param format 格式化字符串(例如:"yyyy-MM-dd HH:mm:ss")
+     * @return java.util.Date
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Date parse(String date, String format) {
         if (StringUtils.isEmpty(date)) {
             return null;
@@ -46,6 +71,14 @@ public class DateUtils {
         }
     }
 
+    /**
+     * @description: 将日期字符串格式化为"yyyy-MM-dd"的Date对象
+     * @param date
+     * @return java.util.Date
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Date parseToYMD(String date) {
         try {
             return (new SimpleDateFormat("yyyy-MM-dd")).parse(date);
@@ -54,14 +87,37 @@ public class DateUtils {
         }
     }
 
+    /**
+     * @description: Date对象格式化为"yyyy-MM-dd HH:mm:ss"的字符串
+     * @param date
+     * @return java.lang.String
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static String format(Date date) {
         return date != null ? (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")).format(date) : "/";
     }
 
+    /**
+     * 将Date对象按自定义格式化为字符串
+     * @param date
+     * @param format
+     * @return
+     */
     public static String format(Date date, String format) {
         return (new SimpleDateFormat(format)).format(date);
     }
 
+    /**
+     * @description: 将Date对象增加年份
+     * @param date
+     * @param year
+     * @return java.util.Date
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Date addYear(Date date, int year) {
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(date);
@@ -70,6 +126,15 @@ public class DateUtils {
         return date;
     }
 
+    /**
+     * @description: 将Date对象增加月份
+     * @param date
+     * @param month
+     * @return java.util.Date
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Date addMonth(Date date, int month) {
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(date);
@@ -78,6 +143,15 @@ public class DateUtils {
         return date;
     }
 
+    /**
+     * @description: 将Date对象增加天数
+     * @param date
+     * @param day
+     * @return java.util.Date
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Date addDay(Date date, int day) {
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(date);
@@ -86,6 +160,15 @@ public class DateUtils {
         return date;
     }
 
+    /**
+     * @description: 将Date对象增加小时
+     * @param date
+     * @param day
+     * @return java.util.Date
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Date addHour(Date date, int day) {
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(date);
@@ -94,6 +177,15 @@ public class DateUtils {
         return date;
     }
 
+    /**
+     * @description: 将Date对象增加分钟
+     * @param date
+     * @param day
+     * @return java.util.Date
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Date addMinute(Date date, int day) {
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(date);
@@ -102,18 +194,43 @@ public class DateUtils {
         return date;
     }
 
+    /**
+     * @description: 将Date对象增加周数
+     * @param date
+     * @param day
+     * @return java.util.Date
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Date addWeek(Date date, int day) {
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(date);
-        calendar.add(5, day);
+        calendar.add(3, day);
         date = calendar.getTime();
         return date;
     }
 
+    /**
+     * @description: 获取当前毫秒时间
+     * @param
+     * @return java.lang.Long
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Long getTimestamp() {
         return System.currentTimeMillis();
     }
 
+    /**
+     * @description: 获取本周开始时间和结束时间
+     * @param addEndDay 是否添加最后一天
+     * @return java.util.Map<java.lang.String, java.lang.String>
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Map<String, String> getCurrentWeek(boolean addEndDay) {
         Map<String, String> map = new HashMap(2);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -139,6 +256,14 @@ public class DateUtils {
         return map;
     }
 
+    /**
+     * @description: 获取本月开始时间和结束时间
+     * @param addEndDay 是否添加最后一天
+     * @return java.util.Map<java.lang.String, java.lang.String>
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Map<String, String> getCurrentMonth(boolean addEndDay) {
         Map<String, String> map = new HashMap(2);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -154,6 +279,14 @@ public class DateUtils {
         return map;
     }
 
+    /**
+     * @description: 获取任意时间当月的开始时间和结束时间
+     * @param addEndDay 是否添加最后一天
+     * @return java.util.Map<java.lang.String, java.lang.String>
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Map<String, String> getAppointMonth(Date date, boolean addEndDay) {
         Map<String, String> map = new HashMap(2);
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
@@ -169,6 +302,14 @@ public class DateUtils {
         return map;
     }
 
+    /**
+     * @description: 将秒转化为时间字符串
+     * @param second
+     * @return java.lang.String
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static String secondToTime(long second) {
         long days = second / 86400L;
         second %= 86400L;
@@ -179,11 +320,27 @@ public class DateUtils {
         return 0L < days ? days + "天" + hours + "小时" + minutes + "分" + second + "秒" : hours + "小时" + minutes + "分" + second + "秒";
     }
 
+    /**
+     * @description: 获得日期的年份
+     * @param date
+     * @return int
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static int getYear(Date date) {
         SimpleDateFormat sdf = new SimpleDateFormat("YYYY");
         return Integer.valueOf(sdf.format(date));
     }
 
+    /**
+     * @description: 获取某年的第一天
+     * @param year 年份
+     * @return java.util.Date
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Date getYearFirst(int year) {
         Calendar calendar = Calendar.getInstance();
         calendar.clear();
@@ -192,6 +349,14 @@ public class DateUtils {
         return currYearFirst;
     }
 
+    /**
+     * @description: 获取某年最后一天
+     * @param year
+     * @return java.util.Date
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static Date getYearLast(int year) {
         Calendar calendar = Calendar.getInstance();
         calendar.clear();
@@ -201,6 +366,14 @@ public class DateUtils {
         return currYearLast;
     }
 
+    /**
+     * @description: 将Date对象转化为LocalDateTime对象
+     * @param date
+     * @return java.time.LocalDateTime
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static LocalDateTime dateToLocalDateTime(Date date){
         Instant instant = date.toInstant();
         ZoneId zoneId = ZoneId.systemDefault();

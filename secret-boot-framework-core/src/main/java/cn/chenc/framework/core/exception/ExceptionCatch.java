@@ -49,7 +49,6 @@ public class ExceptionCatch {
         return responseResult;
     }
 
-    //对Exception异常的捕获
 
 
 }

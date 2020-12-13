@@ -16,6 +16,14 @@ public class WebSpiderUtils {
 
     private static final String KEY = CachePrefixEnum.SPIDER.getPrefix() + "list";
 
+    /**
+     * @description: 获取爬虫类型
+     * @param ua
+     * @return java.lang.String
+     * @throws
+     * @author secret
+     * @date 2020/12/12 secret
+     */
     public static String parseUa(String ua) {
         if (StringUtils.isEmpty(ua)) {
             return null;

@@ -21,6 +21,15 @@ import java.util.Map;
 
 public class HttpClientUtil {
 
+	/**
+	 * @description: 带参数的get请求
+	 * @param url
+	 * @param param
+	 * @return java.lang.String
+	 * @throws
+	 * @author secret
+	 * @date 2020/12/12 secret
+	 */
 	public static String doGet(String url, Map<String, String> param) {
 
 		// 创建Httpclient对象
@@ -62,10 +71,27 @@ public class HttpClientUtil {
 		return resultString;
 	}
 
+	/**
+	 * @description: 不带参数的get请求
+	 * @param url
+	 * @return java.lang.String
+	 * @throws
+	 * @author secret
+	 * @date 2020/12/12 secret
+	 */
 	public static String doGet(String url) {
 		return doGet(url, null);
 	}
 
+	/**
+	 * @description: 带参数post请求
+	 * @param url
+	 * @param param
+	 * @return java.lang.String
+	 * @throws
+	 * @author secret
+	 * @date 2020/12/12 secret
+	 */
 	public static String doPost(String url, Map<String, String> param) {
 		// 创建Httpclient对象
 		CloseableHttpClient httpClient = HttpClients.createDefault();
@@ -101,10 +127,27 @@ public class HttpClientUtil {
 		return resultString;
 	}
 
+	/**
+	 * @description: post请求
+	 * @param url
+	 * @return java.lang.String
+	 * @throws
+	 * @author secret
+	 * @date 2020/12/12 secret
+	 */
 	public static String doPost(String url) {
 		return doPost(url, null);
 	}
 
+	/**
+	 * @description: 带参数post请求
+	 * @param url
+	 * @param json
+	 * @return java.lang.String
+	 * @throws
+	 * @author secret
+	 * @date 2020/12/12 secret
+	 */
 	public static String doPostJson(String url, String json) {
 		// 创建Httpclient对象
 		CloseableHttpClient httpClient = HttpClients.createDefault();

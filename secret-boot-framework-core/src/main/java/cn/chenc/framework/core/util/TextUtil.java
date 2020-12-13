@@ -4,8 +4,8 @@ import com.vladsch.flexmark.html.HtmlRenderer;
 import com.vladsch.flexmark.parser.Parser;
 import com.vladsch.flexmark.util.ast.Node;
 import com.vladsch.flexmark.util.data.MutableDataSet;
-import org.apache.commons.lang.StringEscapeUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.text.StringEscapeUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.safety.Whitelist;
@@ -57,7 +57,7 @@ public class TextUtil {
         document.select("p").append("\\n");
         String newHtml = document.html().replaceAll("\\\\n", "\n");
         String plainText = Jsoup.clean(newHtml, "", Whitelist.none(), outputSettings);
-        String result = StringEscapeUtils.unescapeHtml(plainText.trim());
+        String result = StringEscapeUtils.unescapeHtml4(plainText.trim());
         return result;
     }
 

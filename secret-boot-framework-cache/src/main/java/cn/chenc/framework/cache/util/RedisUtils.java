@@ -580,7 +580,7 @@ public class RedisUtils {
      * @return
      */
     public Set keys(String pattern){
-        return redisTemplate.keys(pattern);
+        return redisTemplate.keys(PREFIX+pattern);
     }
 
     /**
