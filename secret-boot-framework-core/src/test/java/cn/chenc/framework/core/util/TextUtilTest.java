@@ -1,6 +1,7 @@
 package cn.chenc.framework.core.util;
 
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 
 /**
  * 　@description: TODO
