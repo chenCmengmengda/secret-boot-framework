@@ -40,14 +40,14 @@ cache模块支持缓存切面
 <dependency>
     <groupId>com.gitee.secretopen</groupId>
     <artifactId>secret-boot-framework-all</artifactId>
-    <version>1.2.0</version>
+    <version>1.3.0</version>
 </dependency>
 ```
 
 #### 核心依赖
 |  组件   | 版本  |
 |  ----  | ----  |
-| springboot  | 2.2.2.RELEASE |
+| springboot  | 2.4.0 |
 | mybatis-plus  | 3.4.1 |
 | mysql  | 5.7/8.x |
 | redis  |  |
