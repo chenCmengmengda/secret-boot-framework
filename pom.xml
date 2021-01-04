@@ -47,7 +47,7 @@
         <okhttp.version>3.9.1</okhttp.version>
         <lombok.version>1.18.16</lombok.version>
         <springfox-swagger.version>2.7.0</springfox-swagger.version>
-        <guava.version>24.0-jre</guava.version>
+        <guava.version>24.1.1-jre</guava.version>
         <mybatis-plus.version>3.4.1</mybatis-plus.version>
         <jsoup.version>1.10.2</jsoup.version>
         <useragentutils.version>1.20</useragentutils.version>
